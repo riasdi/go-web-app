@@ -19,6 +19,7 @@ The server will start on port 8080. You can access it by navigating to `http://l
 
 # Let's deployment the application
 ## 1. Using EKS
+
 ### Write a Dockerfile for the go-web application
 
 ### Let's containerise the application
