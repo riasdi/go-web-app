@@ -17,9 +17,9 @@ The server will start on port 8080. You can access it by navigating to `http://l
 ![Website](static/images/golang-website.png)
 
 
-## Let's deployment the application
-### 1. Using EKS
-## Write a Dockerfile for the go-web application
+# Let's deployment the application
+## 1. Using EKS
+### Write a Dockerfile for the go-web application
 
 ### Let's containerise the application
 
@@ -32,7 +32,7 @@ docker push rivadias/go-web-app:v1
 
 ```
 
-## Let's create a manifest files: deployment, service, ingress
+### Let's create a manifest files: deployment, service, ingress
 
 
 
@@ -67,7 +67,7 @@ kubectl get nodes -o wide
 select one node external IP, open inn new tab-- ipaddress:port/courses
 
 
-## let's create a ingress controller
+### let's create a ingress controller
 
 ```cli
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.2/deploy/static/provider/aws/deploy.yaml
