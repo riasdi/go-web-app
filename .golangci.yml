@@ -1,23 +1,9 @@
-run:
-  skip-dirs:
-    - vendor
-    - k8s
-    - helm
-  tests: true
-  timeout: 5m
-
-linters:
-  enable:
-    - govet
-    - staticcheck
-    - golint
-    - gofmt
-    - ineffassign
-    - errcheck
-    - gosimple
-    - unused
-    - structcheck
-    - deadcode
-
-issues:
-  exclude-use-default: false
+with:
+  version: v1.56.2
+  install-mode: binary
+  github-token: ${{ secrets.GITHUB_TOKEN }}
+  only-new-issues: false
+  skip-cache: false
+  skip-save-cache: false
+  problem-matchers: false
+  cache-invalidation-interval: 7
