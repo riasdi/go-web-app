@@ -36,7 +36,7 @@ jobs:
       uses: golangci/golangci-lint-action@v6
       with:
        version: v1.56.2
-       args: run ./... --skip-dirs=vendor,k8s,helm --timeout 5m
+       args: ./... --skip-dirs=vendor,k8s,helm --timeout 5m
 
 
   push:
