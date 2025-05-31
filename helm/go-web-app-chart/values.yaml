@@ -8,7 +8,7 @@ image:
   repository: rivadias/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "15363515770"
+  tag: "15363645305"
 
 ingress:
   enabled: false
