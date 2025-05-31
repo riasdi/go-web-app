@@ -56,7 +56,7 @@ jobs:
 
   push:
     runs-on: ubuntu-latest
-    needs: build
+    needs: code-quality
     steps:
     - uses: actions/checkout@v4
 
