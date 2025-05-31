@@ -1,0 +1,23 @@
+run:
+  skip-dirs:
+    - vendor
+    - k8s
+    - helm
+  tests: true
+  timeout: 5m
+
+linters:
+  enable:
+    - govet
+    - staticcheck
+    - golint
+    - gofmt
+    - ineffassign
+    - errcheck
+    - gosimple
+    - unused
+    - structcheck
+    - deadcode
+
+issues:
+  exclude-use-default: false
