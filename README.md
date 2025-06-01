@@ -86,6 +86,7 @@ kubectl get svc
 
 
 
+
 ## Deployment using CI/CD pipeline, CI- GithubActions, CD- ArgoCD
 
 
@@ -130,6 +131,18 @@ New tab: go-web-app.local/home
 
 ![Screenshot 2025-05-31 194144](https://github.com/user-attachments/assets/a751b8eb-7e56-4ff9-a2a0-c151c6dd71b4)
 
+
+## Cleanup and Resource Deletion
+```cli
+argocd app list
+
+argocd app delete app_name --cascade
+
+kubectl delte namespace argocd
+
+eksctl delete cluster --name name-of-cluster --region your-region
+```
+Delete the cloudformation templates if needed, check for vpc, elastic_ip, load balance, volume in EC2 dashboard once
 
 
 
