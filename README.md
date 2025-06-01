@@ -85,7 +85,8 @@ kubectl get svc
 ![Screenshot 2025-05-31 163051](https://github.com/user-attachments/assets/471119ae-1130-4298-ab3f-7c3add6f28e2)
 
 
-# Deployment using CI/CD pipeline, CI- GithubActions, CD- ArgoCD
+
+## Deployment using CI/CD pipeline, CI- GithubActions, CD- ArgoCD
 
 
 Create a .GitHub/workflows/ci.yaml
@@ -107,7 +108,7 @@ kubectl get svc -n argocd
 ```
 open on browser with the address
 
-for ArgoCD password
+For ArgoCD password
 
 ```cli
 kubectl get secrets -n argocd
@@ -125,7 +126,7 @@ kubectl get svc
 kubectl get ing
 ```
 
-New tab: go-web-app.local/cources
+New tab: go-web-app.local/home
 
 ![Screenshot 2025-05-31 194144](https://github.com/user-attachments/assets/a751b8eb-7e56-4ff9-a2a0-c151c6dd71b4)
 
