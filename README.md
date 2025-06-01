@@ -2,7 +2,7 @@
 
 ## Deployment of application using manifest file
 
-Let's start with writing a Multistage Dockerile
+Let's start with writing a Multistage Dockerfile
 
 ```cli
 docker build -t rivadias/go-web-app:v1 .
@@ -10,7 +10,7 @@ docker run -p 8080:8080 -it rivadias/go-web-app:v1
 docker push rivadias/go-web-app:v1
 ```
 
-Create a k8s/manifest: deployment.yaml, service.yaml, ingress.yaml
+Create a k8s/manifests: deployment.yaml, service.yaml, ingress.yaml
 
 ```cli
  aws configure
@@ -26,8 +26,6 @@ kubectl apply -f k8s/manifests/service.yaml
 
 kubectl apply -f k8s/manifests/ingress.yaml
 ```
-![Screenshot 2025-05-31 124630](https://github.com/user-attachments/assets/5e7ad1ff-672f-4182-9c3d-6c63cc37b916)
-
 
 Edit the service and change it to NodePort 
 ```cli
@@ -36,7 +34,9 @@ kubectl edit svc nameofservice
 ```cli
 kubectl get nodes -o wide
 ```
-Copy external ip of the node and open new tab- ip:svcport/courses
+![Screenshot 2025-05-31 124630](https://github.com/user-attachments/assets/5e7ad1ff-672f-4182-9c3d-6c63cc37b916)
+
+Copy external ip of the node and open new tab- ip:service_port/courses
 
 Create a ingress controller to watch over ingress
 ```cli
