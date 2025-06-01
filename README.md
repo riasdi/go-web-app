@@ -36,7 +36,7 @@ kubectl get nodes -o wide
 ```
 ![Screenshot 2025-05-31 124630](https://github.com/user-attachments/assets/5e7ad1ff-672f-4182-9c3d-6c63cc37b916)
 
-Copy external ip of the node and open new tab- ip:service_port/courses
+Copy external_ip of the node and open new tab- ip:service_port/courses
 
 Create a ingress controller to watch over ingress
 ```cli
@@ -59,7 +59,7 @@ in the host paste the address- ip_address  go-web-app.local
 
 New-tab: go-web-app.local/home
 
-![Screenshot 2025-05-31 154109](https://github.com/user-attachments/assets/229265af-f84b-4a08-9532-aeda192b4346)
+![Screenshot 2025-05-31 154054](https://github.com/user-attachments/assets/2905b1e4-812e-4bff-9e41-a6e41ce2f20f)
 
 
 ## Deployment using helm
